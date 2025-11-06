@@ -1,0 +1,48 @@
+/* BackToTop button */
+.back-to-top {
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+  width: 47px;
+  height: 47px;
+  background-color: var(--white_color);
+  color: var(--primary_color);
+  border: 2px solid var(--primary_color);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* BackToTop button hover Effect */
+.back-to-top:hover {
+  background-color: var(--primary_color);
+  color: var(--white_color);
+  border: 2px solid var(--primary_color);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 130px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+}
+
+/* For our Phone View */
+@media (max-width: 480px) {
+  .back-to-top {
+    bottom: 120px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
