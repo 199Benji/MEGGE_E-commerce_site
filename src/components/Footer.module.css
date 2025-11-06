@@ -77,3 +77,14 @@ hr{
     font-family: var( --Paragraph_font);
     margin-top: 10px;
 }
+/* Media Querry */
+@media(max-width: 640px){
+    .container{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .social{
+        justify-content: center;
+        align-items: center;
+    }
+}
