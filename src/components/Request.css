@@ -1,140 +1,161 @@
-/* Request CSS */
-.heroBgMedia {
+* {
+   --Header_font: "Inter Tight", sans-serif;
+   --Paragraph_font: "Poppins", sans-serif;
+  
+}
+.request-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 15px;
+  background: linear-gradient(to left,
+      #001bb770,   
+      rgba(216, 216, 218, 0.075)    
+    );
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.request-container h1 {
+  text-align: center;
+  color: black;
+  margin-bottom: 10px;
+  overflow: hidden; 
+  white-space: nowrap; 
+  border-right: 3px solid black; 
+  width: 0; 
+  animation: typing 3s steps(30, end) forwards, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: black;
+  }
+}
+
+.request-container p {
+  text-align: center;
+  color:black;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.request-form label {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 500;
+  
+}
+
+.request-form input,
+.request-form textarea {
   width: 100%;
-  min-height: 500px;
-  background-position: center;
-  background-image: url('src/assets/Microsoft Surface Book.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
+  padding: 10px;
+  border: 1px solid #4d4141;
+  border-radius: 6px;
+  outline: none;
+  margin-top: 5px;
+  font-size: 14px;
 }
 
-.heroBg {
-  background: linear-gradient(120deg, rgba(4, 26, 154, 0.6) 0%, rgb(4, 26, 154)) ;
-  color: var(--white_color);
-  position: relative;
-  font-family: var(--Paragraph_font);
-  padding: 180px;
-  min-height: 500px;
-  position: relative;
-  overflow: hidden;
-  z-index: 2;
+.requestformCtn {
+  display: flex;
+  gap: 10px;
+  width: 100%;
 }
 
-.heroBg h1 {
-  font-size: 3.5rem;
-  text-align: center;
-  font-family: var(--Paragraph_font);
+.inputCtn {
+  width: 50%;
+  margin-top: 20px;
 }
 
-.heroBg-subtitle {
-  font-size: 0.9rem;
-  text-align: center;
-  padding: 0 150px;
-  opacity: 0.9;
-  font-weight: 300;
+.email, .details {
+  margin-top: 20px;
 }
 
-
-.contactContainer {
-    display: flex;
-    gap: 40px;
-    padding: 100px 200px;
-    margin-bottom: 100px;
-    background-color: #F1F1F1;
-    justify-content: center;
+.inputCtn label, .email label, .details label {
+  padding: 0;
+  margin: 0;
 }
 
-.contactInfo {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+.request-form input:focus,
+.request-form textarea:focus {
+  border-color: #001BB7;
 }
 
-.contactItem {
-    background-color: var(--white_color);
-    display: flex;
-    gap: 20px;
-    font-family: var(--Paragraph_font);
-    min-width: 300px;
-    padding: 20px;
-    border-radius: 5px;
+.request-form textarea {
+  min-height: 140px;
+  max-height: 150px;
+  resize: vertical;
 }
 
-.contactItem i {
-    display: flex;
-    background-color: var(--secondary_color);
-    color: var(--primary_color);
-    padding: 20px;
-    width: 15px;
-    height: 15px;
-    transform: translateY(6px);
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
+.request-form button {
+  width: 100%;
+  background-color: #001BB7;
+  margin-top: 20px;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.7s ease;
 }
 
-.contactFormContainer {
-    width: 70%;
-    background-color: var(--white_color);
-    padding: 20px;
-    border-radius: 5px;
-    font-family: var(--Paragraph_font);
+.request-form button:hover {
+  background-color: #0f5fc4;
+}
+.gadget {
+  background: 
+    linear-gradient(to right,
+      #d5d7e44b,   
+      rgba(223, 223, 226, 0.151)    
+    );
+   padding: 20px;
+    
 }
 
-.contactFormContainer h2 {
-    margin-bottom: 1px;
+.forms {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+ 
+  
+}
+.details {
+  width: 100%;
 }
 
-.contactFormContainer p {
-    margin-bottom: 25px;
+.details textarea {
+  width: 100%;
+  min-height: 120px;
 }
 
-.contactForm {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.email {
+  width: 100%;
 }
 
-.contactInput {
-    width: 100%;
-    display: flex;
-    gap: 10px;
+.email input {
+  width: 100%;
 }
-
-.contactInput input, .contactForm textarea {
-    width: 100%;
-    border-radius: 5px;
-    outline: none;
-    border: 1px solid gray;
-    font-size: 1rem;
-    padding: 15px;
+.first {
+  display: flex;
+  gap: 20px;
 }
-
-.contactInput input::placeholder, .contactForm textarea::placeholder {
-    font-size: 1rem;
-    color: gray;
-}
-
-.contactForm textarea {
-    resize: vertical;
-    min-height: 120px;
-}
-
-.contactBtn {
-    padding: 15px 20px;
-    margin-top: 20px;
-    font-size: 1rem;
-    color: var(--white_color);
-    font-weight: 600;
-    background-color: var(--primary_color);
-    border: none;
-    border-radius: 5px;
-    transition: all 0.3s;
-}
-
-.contactBtn:hover {
-    cursor: pointer;
-    background-color: var(--Black_Hover_color);
+.number {
+  display: flex;
+  gap: 20px;
 }

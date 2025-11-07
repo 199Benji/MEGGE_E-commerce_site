@@ -1,0 +1,117 @@
+ * {
+  font-family: "Inter Tight", sans-serif;
+ }
+.contact-container1 {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),   
+      rgba(0, 0, 0, 0.6)    
+    ),
+    url('../assets/images/backimage.jpeg');
+  background-size: cover ;
+  background-position: center;
+  justify-items: center;
+  padding-top: 120px;
+  height: 400px;
+}
+p {
+  font-family: "Poppins", sans-serif;
+}
+.contact-container h2 {
+  color: var(--primary_color);
+  font-size: xx-large;
+
+}
+
+.contact-container {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 25px;
+  --Header_font: "Inter Tight", sans-serif;
+  --Paragraph_font: "Poppins", sans-serif;
+  
+
+}
+.button1 {
+  color: white;
+  background-color: blue;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  justify-items: center;
+  display: flex;
+  margin-top: 70px;
+}
+.button2{
+  color: white;
+  background-color: rgba(7, 212, 34, 0.829);
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+
+}
+.contacts {
+  margin-top: 38px;
+  color:rgba(0, 0, 0, 0.959);
+  box-sizing: border-box;
+  background-color: rgba(231, 233, 232, 0.425);
+  box-shadow: 3px 3px 7px rgb(231, 227, 227);
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 0;
+  
+
+}
+i {
+  color: blue;
+  box-sizing: border-box;
+  background-color: rgba(178, 211, 238, 0.678);
+  border-radius: 50%;
+  padding: 12px;
+  margin: 20px;
+}
+.icons {
+  display: flex;
+  padding-left: 5px;
+  color: black;
+  box-sizing: border-box;
+  background-color: rgba(247, 248, 247, 0.973);
+  box-shadow: 3px 3px 7px rgb(187, 185, 185);
+
+}
+.heading {
+  font-weight: bold;
+  padding-top: 20px;
+  line-height: 20px;
+  padding-right: 150px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.media {
+  color:black;
+
+}
+
+.site{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.button2 {
+  color: white;
+}
+.message {
+  color:black;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}

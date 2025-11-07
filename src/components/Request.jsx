@@ -1,103 +1,130 @@
-import React from 'react'
-import './Request.css'
+import React, { useState } from "react";
+import "./Request.css";
 
-const Request = () => {
-  const details = [
-    {
-      icon: <i className="fas fa-phone"></i>,
-      head: "Phone Number",
-      detail: "+234 123 4567 890"
-    },
-    {
-      icon: <i className="fas fa-phone"></i>,
-      head: "Email Address",
-      detail: "megge@gmail.com"
-    },
-    {
-      icon: <i className="fas fa-phone"></i>,
-      head: "Fax Address",
-      detail: "+234 123 4567 890"
-    },
-    {
-      icon: <i className="fas fa-phone"></i>,
-      head: "Location",
-      detail: "Along Abak Road, Uyo"
-    }
-  ];
+export default function Request() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    number: "",
+    gadget: "",
+    details: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(`Thank you ${formData.name}, your gadget request has been submitted!`);
+    setFormData({ name: "", email: "", number: "", gadget: "", details: "" });
+  };
+
   return (
-    <section className="RequestPage">
-      <div className="heroBgMedia">
-        <div className="heroBg">
-            <h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              Contact Us
-            </h1>
-            <p 
-              className="heroBg-subtitle"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
-              Redefining Your Electronic Gadget Experience by delivering innovative, reliable, and stylish devices that seamlessly elevate your daily life, keeping you connected, empowered, and ahead of the tech curve.
-            </p>
+    <div className="request-container">
+      <div className="gadget">
+        <h1>MEGGE Gadget Request Form</h1>
+        <p>Fill out the form below to request your desired MEGGE gadget.</p>
+      
+
+      <div className="forms">
+      <form className="request-form" onSubmit={handleSubmit}>
+        
+        <div className="requestformCtn">
+          <div className="inputCtn">
+          <label>
+          First Name
+          </label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your first name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          </div>
+
+          <div className="inputCtn">
+            <label >
+              Last Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your last name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </div>
         </div>
+
+        <div className="email"> 
+          <label>
+            Email Address
+          </label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div className="requestformCtn">
+          <div className="inputCtn">
+            <label>
+              Phone no
+            </label>
+            <input
+              type="number"
+              name="number"
+              placeholder="Enter your phone no"
+              value={formData.number}
+              onChange={handleChange}
+              required
+            />
+          </div>
+        
+          <div className="inputCtn">
+            <label>
+              Gadget Name
+            </label>
+            <input
+              type="text"
+              name="gadget"
+              placeholder="What gadget are you requesting?"
+              value={formData.gadget}
+              onChange={handleChange}
+              required
+            />
+          </div>
+        </div>
+
+        <div className="details">
+          <label>
+          Additional Details
+           </label>
+          <textarea
+            name="details"
+            placeholder="Describe specifications, quantity, etc."
+            value={formData.details}
+            onChange={handleChange}
+            rows="5"
+          />
+        </div>
+
+        <button type="submit">Submit Request</button>
+      </form>
+      </div>
       </div>
 
-      <div className="contactContainer">
-        <div className="contactInfo">
-          {details.map((member, index) => (
-            <div className="contactItem" key={index}>
-              {member.icon}
-              <div className="contactItemText">
-                <h3 className="contact-name">{member.head}</h3>
-                <p className="contact-role">{member.detail}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="contactFormContainer">
-          <h2>Send Message</h2>
-          <p>Have a question? Send us a message—we’ll get back to you quickly.</p>
-          {/* Contact Form */}
-          <form action="#" className="contactForm">
-            <div className="contactInput">
-              <input type="text" placeholder='Your Name' />
-              <input type="text" placeholder='Email Address' />
-            </div>
-            <div className="contactInput">
-              <input type="tel" placeholder='Phone Number' />
-              <input type="text" placeholder='Subject' />
-            </div>
-            <textarea name="contactMesage" id="contactMesage" placeholder='Message' />
-          </form>
-
-          <button className="contactBtn">Send Message</button>
-        </div>
-      </div>
-
-      {/* Embed: Abak Road, Uyo */}
-      <div className='Contactmap' style={{margin: '0 200px'}}>
-        <h1 style={{color: 'var(--primary_color)', fontFamily: 'var(--Paragraph_font)', textAlign: 'center'}}>Find Us on Google Maps</h1>
-        <p style={{color: 'var(--Black_Hover_color)', fontFamily: 'var(--Paragraph_font)', textAlign: 'center', padding: '10px 120px 40px'}}>Bringing convenience closer to you — visit us along Abak Road, Uyo, and experience seamless shopping with MEGGE.</p>
-        <div style={{ width: "100%", height: "350px" }}>
-          <iframe
-            title="Abak Road Map"
-            src="https://www.google.com/maps?q=4.981412,7.793813&z=15&output=embed"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
-    </section>
-  )
+    </div>
+  );
 }
-
-export default Request
