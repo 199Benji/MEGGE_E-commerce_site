@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className={m.footer}>
       <div className={m.container}>
         <div className={m.sub}>
-          <div className={m.brand}><img src="" alt="Megge logo" /><h3>MEGGE</h3></div>
+          <div className={m.brand}><img src="src/assets/Megge_logo.svg" alt="Megge logo" /><h3>MEGGE</h3></div>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />Vero obcaecati nam eligendi est id quos reprehenderit hic? Quidem quis repellendus adipisci, <br />eligendi facilis, provident esse velit atque, alias blanditiis impedit.</p>
           
           <div className={m.social}>

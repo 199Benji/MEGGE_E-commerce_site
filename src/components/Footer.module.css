@@ -4,6 +4,7 @@
     margin-top: 100px;
     padding: 60px 50px;
 }
+
 .container{
     display: flex;
     justify-content: center;
@@ -19,6 +20,13 @@
     align-items: center;
     margin-bottom: 20px;
 }
+.sub .brand h3{
+    font-size: 40px;
+}
+.brand img{
+    width: 60px;
+}
+
 .sub p{
     color: var(--white_dark);
     font-family: var(--Paragraph_font);
