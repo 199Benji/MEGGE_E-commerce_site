@@ -25,8 +25,8 @@ const Footer = () => {
           <h3>Product</h3>
           <ul>
             <NavLink to="/">product one</NavLink>
-            <NavLink to="/">product one</NavLink>
-            <NavLink to="/">product one</NavLink>
+            <NavLink to="/">product two</NavLink>
+            <NavLink to="/">product three</NavLink>
             <NavLink to="/">product one</NavLink>
           </ul>
         </div>
