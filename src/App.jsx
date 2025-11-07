@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import MainLayout from './layout/MainLayout'
 import { BrowserRouter } from 'react-router-dom'
+import Items from './components/Items'
 
 
 function App() {
@@ -9,9 +10,10 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
+    {/* <BrowserRouter>
         <MainLayout />
-    </BrowserRouter>
+    </BrowserRouter> */}
+    <Items />
     </>
   )
 }
