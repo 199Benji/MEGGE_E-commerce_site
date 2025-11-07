@@ -1,6 +1,8 @@
 import { useState } from 'react'
+import './App.css'
 import MainLayout from './layout/MainLayout'
-import ContactPage from './pages/ContactPage.jsx'
+import { BrowserRouter } from 'react-router-dom'
+import Items from './components/Items'
 
 
 function App() {
@@ -8,7 +10,9 @@ function App() {
 
   return (
     <>
-    <ContactPage />
+    <BrowserRouter>
+        <MainLayout />
+    </BrowserRouter>
     </>
   )
 }

@@ -3,11 +3,19 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+*::selection {
+  background-color: var(--primary_color);
+  color: var(--white_color);
+}
+
 :root{
   --Header_font: "Inter Tight", sans-serif;
   --Paragraph_font: "Poppins", sans-serif;
-  --primary_color: #001BB7;
-  --white_color : #ffff;
+  --primary_color: #041a9a;
+  --white_color: #ffffff;
+  --Subtitle_color: #666666;
   --Black_color: #000000;
+  --Black_Hover_color: #3a3939;
   --secondary_color: #99ccff;
 }

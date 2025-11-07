@@ -1,0 +1,384 @@
+/* About Page Styles */
+.about-page {
+  font-family: var(--Header_font);
+  color: var(--Black_color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.heroBgImage {
+  background: linear-gradient(120deg, rgba(4, 26, 154, 0.6) 0%, rgb(4, 26, 154)) ;
+  color: var(--white_color);
+  position: relative;
+  font-family: var(--Paragraph_font);
+  padding: 180px;
+  min-height: 500px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.about-hero {
+  width: 100%;
+  min-height: 500px;
+  background-position: center;
+  background-image: url('src/assets/Microsoft Surface Book.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.about-hero h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  font-family: var(--Paragraph_font);
+}
+
+.hero-subtitle {
+  font-size: 0.9rem;
+  text-align: center;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+/* Mission Section */
+.mission-section {
+  padding: 80px 0;
+}
+
+.mission-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.mission-text h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--primary_color);
+  font-family: var(--Paragraph_font);
+  margin-bottom: 8px;
+}
+
+.mission-text p {
+  font-size: 1.1rem;
+  color: var(--Subtitle_color);
+  line-height: 1.8;
+}
+
+.mission-image .image-placeholder {
+  height: 300px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: booty-bounce 3s ease-in-out infinite;
+}
+
+@keyframes booty-bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+/* Story Section */
+.story-section {
+  padding: 80px 0;
+}
+
+.story-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.story-image .image-placeholder {
+  height: 300px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: booty-bounce 3s ease-in-out infinite;
+}
+
+.story-text h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--primary_color);
+  font-family: var(--Paragraph_font);
+  margin-bottom: 8px;
+}
+
+.story-text p {
+  font-size: 1.1rem;
+  color: var(--Subtitle_color);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* TEAM SECTION */
+.team-section {
+  padding: 70px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.team-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--primary_color);
+  font-family: var(--Paragraph_font);
+  margin-bottom: 8px;
+}
+
+.team-subtitle {
+  color: var(--Subtitle_color);
+  font-size: 0.95rem;
+  margin-bottom: 50px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 35px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.team-card {
+  border: 1px solid #e9e9e9;
+  border-radius: 16px;
+  padding: 28px 20px;
+  transition: all 0.35s ease;
+  cursor: default;
+}
+
+.team-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 14px rgba(0,0,0,0.08);
+  border-color: transparent;
+}
+
+.team-img-wrapper {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 18px auto;
+}
+
+.team-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform .45s ease;
+}
+
+.team-name {
+  font-size: 0.92rem;
+  font-weight: 500;
+  font-family: var(--Paragraph_font);
+  color: var(--Black_Hover_color);
+  margin-bottom: 4px;
+}
+
+.team-role {
+  font-size: 0.85rem;
+  color: var(--primary_color);
+  font-family: var(--Paragraph_font);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* Stats Section */
+.stats-section {
+  padding: 60px 100px;
+  display: flex;
+  gap: 10px;
+  color: var(--Black_Hover_color);
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.lowerContainer {
+  width: 60%;
+  position: relative;
+  font-family: var(--Paragraph_font);
+}
+
+.imagesCircle1, .imagesCircle2, .imagesCircle3, .imagesCircle4 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 4px solid var(--white_color);
+}
+
+.imagesCircle1 {
+  left: 20px;
+  z-index: 4;
+}
+
+.imagesCircle2 {
+  left: 80px;
+  z-index: 3;
+}
+
+.imagesCircle3 {
+  left: 140px;
+  z-index: 2;
+}
+
+.imagesCircle4 {
+  left: 200px;
+  z-index: 1;
+}
+
+.statsGrid {
+  padding-top: 100px;
+  display: flex;
+  gap: 40px;
+}
+
+.statsItem h3 {
+  font-size: 1.2rem;
+}
+
+.statsItem p {
+  font-size: 0.9rem;
+}
+
+.otherlowerContainer {
+  width: 40%;
+  text-align: right;
+}
+
+.otherlowerContainer h2 {
+  color: var(--Black_Hover_color);
+  font-size: 2rem;
+}
+
+.otherlowerContainer h3 {
+  font-size: 1.8rem;
+}
+
+.otherlowerContainer h3 span {
+  color: #c4c2c2;
+}
+
+.otherlowerContainer p {
+  font-size: 0.85rem;
+  color: var(--Subtitle_color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .mission-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .story-content {
+    margin-top: 100px;
+    grid-template-columns: 1fr;
+  }
+
+  .mission-text h2,
+  .story-text h2,
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .mission-image .image-placeholder img {
+    height: 600px;
+    margin-top: 100px;
+  }
+
+  .story-image,
+  .story-image .image-placeholder {
+    display: none;
+  }
+
+  .stats-section {
+    padding: 50px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .lowerContainer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .otherlowerContainer {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .imagesCircle1, .imagesCircle2, .imagesCircle3, .imagesCircle4 {
+    left: auto;
+    position: relative;
+    display: inline-block;
+    margin-left: -15px;
+  }
+
+  .statsGrid {
+    justify-content: center;
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 60px 0;
+  }
+  
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .mission-section,
+  .story-section {
+    padding: 60px 10px;
+  }
+
+  .team-section {
+    padding: 60px 40px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-section {
+    padding: 40px 15px;
+  }
+
+  .statsItem h3 {
+    font-size: 1.05rem;
+  }
+
+  .otherlowerContainer h2,
+  .otherlowerContainer h3 {
+    font-size: 1.4rem;
+  }
+}

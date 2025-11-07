@@ -102,17 +102,27 @@
 
 .forms {
   margin-top: 30px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   gap: 10px;
   
 }
 .details {
-  width: 400px;
+  width: 100%;
 }
+
+.details textarea {
+  width: 100%;
+  min-height: 120px;
+}
+
 .email {
-  display: block;
-  width: 500px;
+  width: 100%;
+}
+
+.email input {
+  width: 100%;
 }
 .first {
   display: flex;
