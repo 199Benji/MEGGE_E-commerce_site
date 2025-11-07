@@ -1,66 +1,93 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom'
-import './Items.css';
-import ProductPage from '../pages/ProductPage';
+import React from 'react'
+import { useState } from 'react'
+import './Tablets.css';
 
-const Items = () => {
+const Tablets = () => {
+
   const [cart, setCart] = useState([]);
 
   const products = [
     {
       id: 1,
-      name: "Apple Macbook Air",
-      price: 1440000,
-      originalPrice: 1940000,
-      image: "/src/assets/download (18).jpg",
+      name: "Apple ipad mini",
+      price: 740000,
+      originalPrice: 1640000,
+      image: "/src/assets/download (21).jpg",
       rating: 4,
-      category: "Laptops"
+      category: "Tablets"
     },
     {
       id: 2,
-      name: "Asus ROG Zephyrus Gaming G16",
-      price: 3500000,
-      originalPrice: 3900000,
-      image: "/src/assets/White crown best gaming laptop.jpg",
+      name: "Asus ROG Flow Z13",
+      price: 1000000,
+      originalPrice: 1900000,
+      image: "/src/assets/CES 2022_ Asus' ROG Flow Z13 is a bonkers Windows tablet that you can hook to an RTX 3080.jpg",
       rating: 5,
-      category: "Laptops"
+      category: "Tablets"
     },
     {
       id: 3,
-      name: "Microsoft Surface Pro 11th Edition",
-      price: 2400000,
-      originalPrice: 3500000,
+      name: "Microsoft Surface Book",
+      price: 1000000,
+      originalPrice: 1700000,
       image: "/src/assets/Microsoft Surface Book.jpg",
       rating: 5,
       category: "Tablets"
     },
     {
       id: 4,
-      name: "Apple iPhone 16 Pro Max",
-      price: 780000,
-      originalPrice: 1440000,
-      image: "/src/assets/Apple debuts iPhone 16 Pro and iPhone 16 Pro Max.jpg",
-      rating: 3,
-      category: "Smartphones"
+      name: "Samsung Galaxy Tab A9",
+      price: 830000,
+      originalPrice: 1500000,
+      image: "/src/assets/EasyAcc Custodia Cover Compatibile con Samsung Galaxy Tab A9+ _ A9 Plus 11 Pollici 2023 SM-X210_ X215_ X216 Tablet, Nero.jpg",
+      rating: 4,
+      category: "Tablets"
     },
     {
       id: 5,
-      name: "Samsung S22 New Design",
+      name: "Lenovo Tab p12 Pro",
       price: 640000,
       originalPrice: 950000,
-      image: "/src/assets/Samsung S22 New Design.jpg",
-      rating: 5,
-      category: "Smartphones"
+      image: "/src/assets/Lenovo Tab P12 Pro AMOLED Launched in India ( Snapdragon 870 _ 8GB ram _ 256GB storage ).jpg",
+      rating: 3,
+      category: "Tablets"
     },
     {
       id: 6,
-      name: "RazorBlade Gaming Headphone",
-      price: 245000,
-      originalPrice: 300000,
-      image: "/src/assets/Amazon_com_ Headphones & Earbuds_ Electronics_ Earbud Headphones, Over-Ear Headphones, On-Ear Headphones & More.jpg",
+      name: "Nubia RedMagic Gaming Tablet",
+      price: 1550000,
+      originalPrice: 1800000,
+      image: "/src/assets/Nubia RedMagic Gaming Tablet vorgestellt.jpg",
+      rating: 5,
+      category: "Tablets"
+    },
+    {
+      id: 7,
+      name: "Red Magic Pad Gaming Tablet",
+      price: 1340000,
+      originalPrice: 1500000,
+      image: "/src/assets/Red Magic Pad Gaming Tablet Unveiling Tomorrow in China.jpg",
+      rating: 5,
+      category: "Tablets"
+    },
+    {
+      id: 8,
+      name: "Xiaomi Pad 6",
+      price: 640000,
+      originalPrice: 950000,
+      image: "/src/assets/Xiaomi Pad 6.jpg",
       rating: 4,
-      category: "Accessories"
-    }
+      category: "Tablets"
+    },
+    {
+      id: 9,
+      name: "Xiaomi Tablet Redmi Pad 2 4G",
+      price: 350000,
+      originalPrice: 650000,
+      image: "/src/assets/Xiaomi Tablet Redmi Pad 2 4G, 11_, Android.jpg",
+      rating: 4,
+      category: "Tablets"
+    },
   ];
 
   const addToCart = (product) => {
@@ -89,17 +116,14 @@ const Items = () => {
       ></i>
     ));
   };
-  
+
   return (
     <div className="ecommerce-products">
       <div className="products-header">
         <div className="header-content">
-          <h1>Featured Products</h1>
-          <p>Discover our latest collection of premium electronics</p>
+          <h1>Tablets</h1>
+          <p>Non-stop Entertainments for yourself while using our premium tablets</p>
         </div>
-        <button className="view-all-btn">
-          View All Products <i className="fa-solid fa-arrow-right"></i>
-        </button>
       </div>
 
       <div className="products-grid">
@@ -167,6 +191,6 @@ const Items = () => {
       </div> */}
     </div>
   );
-};
+}
 
-export default Items;
+export default Tablets
