@@ -1,7 +1,7 @@
 .footer{
     background-color: var(--primary_color);
     margin-top: 100px;
-    padding: 60px 20px;
+    padding: 60px 50px;
 }
 .container{
     display: flex;
@@ -9,6 +9,7 @@
     align-items: center;
     gap: 120px;
 }
+
 .sub{
     /* border: 1px solid yellow; */
 }
@@ -18,7 +19,7 @@
     margin-bottom: 20px;
 }
 .sub p{
-    color: var(--secondary_color);
+    color: var(--white_dark);
     font-family: var(--Paragraph_font);
 }
 .sub h3{
@@ -35,7 +36,7 @@
 
 }
 .sub ul a {
-    color: var(--secondary_color);
+    color: var(--white_dark);
     text-decoration: none;
     font-family: var(--Paragraph_font);
 }

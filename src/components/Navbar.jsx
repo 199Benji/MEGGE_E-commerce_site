@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <header>
         <nav>
-        <NavLink to="/" title="Personal"><img src="" alt="Logo" /></NavLink>
+        <NavLink to="/" title="Personal"><img src="./assets/Megge_logo.svg" alt="Logo" /></NavLink>
         <NavLink to="/" title="Personal">Home</NavLink>
          <NavLink to="/ContactPage" title="Contact">Contact me</NavLink>
          <NavLink to="/AboutPage" title="About">About</NavLink>
