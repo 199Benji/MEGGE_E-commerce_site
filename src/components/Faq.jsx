@@ -9,20 +9,20 @@ const Faq = () => {
   const faqData = [
     {
       question: "What is your return policy?",
-      answer: "We offer a 30-day return policy for all unused gadgets in their original packaging. If you're not satisfied with your purchase, you can return it for a full refund within 30 days of delivery."
+      answer: "We offer a 30-day return window for all unused items in their original packaging. If you’re not fully satisfied with your purchase, you can request a refund or exchange within 30 days of delivery."
     },
     {
       question: "How long does shipping take?",
-      answer: "Standard shipping takes 3-5 business days. Express shipping is available for 1-2 business days. International shipping typically takes 7-14 business days depending on the destination."
+      answer: "Standard shipping typically takes 3–5 business days. Express delivery is available within 1–2 business days. International orders may take 7–14 business days depending on your location."
     },
     {
       question: "What payment methods do you accept?",
-      answer: "We accept all major credit cards (Visa, MasterCard, American Express), PayPal, Apple Pay, Google Pay, and bank transfers for larger orders."
+      answer: "We accept Visa, MasterCard, American Express, PayPal, Apple Pay, Google Pay, and bank transfers for bulk orders."
     },
     {
-      question: "Are the gadgets covered by warranty?",
-      answer: "Yes, all our gadgets come with a manufacturer's warranty ranging from 1-2 years depending on the brand. We also offer extended warranty options for most products."
-    },
+      question: "Are your gadgets covered by warranty?",
+      answer: "Yes. All products come with a manufacturer’s warranty of 1–2 years depending on the brand. Extended warranty plans are also available on select items."
+    }
   ];
 
   const toggleFAQ = (index) => {

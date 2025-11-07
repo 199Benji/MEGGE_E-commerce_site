@@ -3,6 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+*::selection {
+  background-color: var(--primary_color);
+  color: var(--white_color);
+}
+
 :root{
   --Header_font: "Inter Tight", sans-serif;
   --Paragraph_font: "Poppins", sans-serif;
