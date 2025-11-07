@@ -248,6 +248,10 @@ const AboutPage = () => {
         </div>
       </section>
 
+      <section>
+        <Faq />
+      </section>
+
     </motion.div>
     </>
 
