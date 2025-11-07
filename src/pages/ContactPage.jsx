@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "./ContactPage.css";
-import Request from "../components/Requestt.jsx"
+import Request from "../components/Request.jsx"
 
 
  function ContactPage() {
   
   return (
+    <>
     <div className="contact-container">
        
       <div className="contact-container1">
@@ -17,7 +18,7 @@ import Request from "../components/Requestt.jsx"
 
       <div className="message"> 
           <h1>Send Messages</h1>
-          <p>You can also reach us on:</p>
+          <p>You can also contact us on:</p>
       </div>
 
       <div className="site">
@@ -45,6 +46,30 @@ import Request from "../components/Requestt.jsx"
               <p>Uyo,Akwa-Ibom State</p>
             </div>
           </div>
+
+          <div className="icons">
+            <i class="fa-brands fa-square-facebook"></i>
+            <div>
+              <p className="heading">Facebook</p>
+              <p>Reach us on Facebook</p>
+            </div>
+          </div>
+
+          <div className="icons">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div>
+              <p className="heading">Whatsapp</p>
+              <p>Reach us on Whatsapp</p>
+            </div>
+          </div>
+
+          <div className="icons">
+            <i class="fa-brands fa-tiktok"></i>
+            <div>
+              <p className="heading">TikTok</p>
+              <p>Reach us on TikTok</p>
+            </div>
+          </div>
         </div>
 
         <div className="media">
@@ -52,6 +77,24 @@ import Request from "../components/Requestt.jsx"
         </div>
       </div>
     </div>
+    
+    <div className='Contactmap' style={{margin: '0 90px'}}>
+      <h1 style={{color: 'var(--primary_color)', fontFamily: 'var(--Paragraph_font)', textAlign: 'center'}}>Find Us on Google Maps</h1>
+      <p style={{color: 'var(--Black_Hover_color)', fontFamily: 'var(--Paragraph_font)', textAlign: 'center', padding: '10px 120px 40px'}}>Bringing convenience closer to you — visit us along Abak Road, Uyo, and experience seamless shopping with MEGGE.</p>
+      <div style={{ width: "100%", height: "350px" }}>
+        <iframe
+          title="Abak Road Map"
+          src="https://www.google.com/maps?q=4.981412,7.793813&z=15&output=embed"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+      </>
   );
 }
 export default ContactPage;

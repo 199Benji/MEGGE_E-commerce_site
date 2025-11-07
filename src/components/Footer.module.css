@@ -55,6 +55,7 @@
     cursor: pointer;
     text-align: center;
     transition: all .5s;
+    border: 1px solid var(--secondary_color);
 }
 .social div:hover{
     background-color: var(--primary_color);
