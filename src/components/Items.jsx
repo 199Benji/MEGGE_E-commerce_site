@@ -97,9 +97,9 @@ const Items = () => {
           <h1>Featured Products</h1>
           <p>Discover our latest collection of premium electronics</p>
         </div>
-        <button className="view-all-btn">
+        <NavLink to="/ProductPage" className="view-all-btn">
           View All Products <i className="fa-solid fa-arrow-right"></i>
-        </button>
+        </NavLink>
       </div>
 
       <div className="products-grid">
