@@ -298,7 +298,7 @@ const Information = () => {
           </div>
         </div>
 
-        <div class="otherlowerContainer">
+        <div className="otherlowerContainer">
           <h2>Trusted by</h2> 
           <h3><span>Thousands</span> of Happy Shoppers</h3>
           <p>Every order, every delivery, every experience - we focus on making sure you shop with confidence.</p>
