@@ -27,16 +27,16 @@ const Footer = () => {
             <NavLink to="/">product one</NavLink>
             <NavLink to="/">product two</NavLink>
             <NavLink to="/">product three</NavLink>
-            <NavLink to="/">product one</NavLink>
+            <NavLink to="/">product four</NavLink>
           </ul>
         </div>
 
          <div className={m.sub}>
           <h3>Useful Links</h3>
           <ul>
+            <NavLink to="/">product yes</NavLink>
             <NavLink to="/">product one</NavLink>
-            <NavLink to="/">product one</NavLink>
-            <NavLink to="/">product one</NavLink>
+            <NavLink to="/">product me</NavLink>
             <NavLink to="/">product one</NavLink>
           </ul>
         </div>
