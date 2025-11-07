@@ -1,8 +1,11 @@
 import React from 'react'
+import Request from '../components/Request'
 
 const ContactPage = () => {
   return (
-    <div>ContactPage</div>
+    <>
+      <Request />
+    </>
   )
 }
 
