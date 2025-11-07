@@ -10,10 +10,9 @@ function App() {
 
   return (
     <>
-    {/* <BrowserRouter>
+    <BrowserRouter>
         <MainLayout />
-    </BrowserRouter> */}
-    <Items />
+    </BrowserRouter>
     </>
   )
 }
