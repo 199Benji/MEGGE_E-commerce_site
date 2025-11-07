@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 150px;
+    gap: 70px;
 }
 .sub{
     /* border: 1px solid yellow; */
@@ -18,7 +18,7 @@
     margin-bottom: 20px;
 }
 .sub p{
-    color: var(--secondary_color);
+    color: var(--white_dark);
     font-family: var(--Paragraph_font);
 }
 .sub h3{
@@ -35,7 +35,7 @@
 
 }
 .sub ul a {
-    color: var(--secondary_color);
+    color: var(--white_dark);
     text-decoration: none;
     font-family: var(--Paragraph_font);
 }
