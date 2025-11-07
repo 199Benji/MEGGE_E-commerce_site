@@ -20,3 +20,13 @@
   --Black_Hover_color: #3a3939;
   --secondary_color: #70b6fc;
 }
+
+nav{
+  display: flex;
+  /* justify-content: center; */
+  gap: 30px;
+  align-items: center;
+}
+nav img{
+  width: 60px;
+}
