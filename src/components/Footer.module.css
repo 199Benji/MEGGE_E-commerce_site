@@ -1,5 +1,6 @@
 .footer{
-    background-color: var(--primary_color);
+  background: linear-gradient(rgba(8, 18, 118, 0.9), rgba(13, 4, 113, 0.9)), url('src/assets/Microsoft Surface Book.jpg');
+    /* background-color: var(--primary_color); */
     margin-top: 100px;
     padding: 60px 50px;
 }

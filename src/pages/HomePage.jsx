@@ -1,7 +1,7 @@
 import React from 'react'
-import Information from '../components/Information.jsx'
-import Items from '../components/Items.jsx'
-import Request from '../components/Request.jsx'
+import Information from '../components/Information'
+import Items from '../components/Items'
+import Request from '../components/Request'
 
 const HomePage = () => {
   return (
