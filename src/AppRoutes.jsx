@@ -1,19 +1,19 @@
-import { Routes, Route } from "react-router-dom";
-import HomePage from './pages/HomePage'
-import ContactPage from './pages/ContactPage'
-import ProductPage from './pages/ProductPage'
-import AboutPage from './pages/AboutPage'
+// import { Routes, Route } from "react-router-dom";
+// import HomePage from './pages/HomePage'
+// import ContactPage from './pages/ContactPage'
+// import ProductPage from './pages/ProductPage'
+// import AboutPage from './pages/AboutPage'
 
 
-const AppRoutes = () => {
-  return (
-    <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/ContactPage" element={<ContactPage />} />
-        <Route path="/ProductPage" element={<ProductPage />} />   
-        <Route path="/AboutPage" element={<AboutPage />} />
-    </Routes>
-  )
-}
+// const AppRoutes = () => {
+//   return (
+//     <Routes>
+//         <Route path="/" element={<HomePage />} />
+//         <Route path="/ContactPage" element={<ContactPage />} />
+//         <Route path="/ProductPage" element={<ProductPage />} />   
+//         <Route path="/AboutPage" element={<AboutPage />} />
+//     </Routes>
+//   )
+// }
 
-export default AppRoutes
+// export default AppRoutes

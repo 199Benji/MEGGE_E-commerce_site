@@ -43,7 +43,7 @@ import Request from "../components/Request.jsx"
             <i className="fa-solid fa-location-dot"></i>
             <div>
               <p className="heading">Location</p>
-              <p>Uyo,Akwa-Ibom State</p>
+              <p>Abak road, Uyo,Akwa-Ibom</p>
             </div>
           </div>
 
@@ -51,7 +51,7 @@ import Request from "../components/Request.jsx"
             <i class="fa-brands fa-square-facebook"></i>
             <div>
               <p className="heading">Facebook</p>
-              <p>Reach us on Facebook</p>
+              <p>Contact us on Facebook</p>
             </div>
           </div>
 
@@ -59,7 +59,7 @@ import Request from "../components/Request.jsx"
             <i class="fa-brands fa-whatsapp"></i>
             <div>
               <p className="heading">Whatsapp</p>
-              <p>Reach us on Whatsapp</p>
+              <p>Contact us on Whatsapp</p>
             </div>
           </div>
 
@@ -67,7 +67,7 @@ import Request from "../components/Request.jsx"
             <i class="fa-brands fa-tiktok"></i>
             <div>
               <p className="heading">TikTok</p>
-              <p>Reach us on TikTok</p>
+              <p>Contact us on TikTok</p>
             </div>
           </div>
         </div>

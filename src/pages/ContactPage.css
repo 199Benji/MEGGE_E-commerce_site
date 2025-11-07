@@ -67,7 +67,7 @@ p {
   
 
 }
-i {
+.icons i {
   color: blue;
   box-sizing: border-box;
   background-color: rgba(178, 211, 238, 0.678);
