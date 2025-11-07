@@ -12,26 +12,17 @@
 }
 
 /* Hero Section */
-.heroBgImage {
-  background: linear-gradient(120deg, rgba(4, 26, 154, 0.6) 0%, rgb(4, 26, 154)) ;
-  color: var(--white_color);
-  position: relative;
-  font-family: var(--Paragraph_font);
-  padding: 180px;
-  min-height: 500px;
-  position: relative;
-  overflow: hidden;
-  z-index: 2;
-}
-
 .about-hero {
-  width: 100%;
-  min-height: 500px;
-  background-position: center;
-  background-image: url('src/assets/Microsoft Surface Book.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('src/assets/Microsoft Surface Book.jpg');
+  color: var(--white_color);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  font-family: var(--Paragraph_font);
+  padding: 120px;
+  min-height: 300px;
+  background-position: center;
+  overflow: hidden;
 }
 
 .about-hero h1 {
