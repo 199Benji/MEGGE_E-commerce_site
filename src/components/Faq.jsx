@@ -62,7 +62,7 @@ const Faq = () => {
           <h3>Still have questions?</h3>
           <p>Our customer support team is here to help you</p>
           <div className="contact-options">
-            <NavLink to="/ContactPage" className="contact-btn secondary" title="Contact">Contact Us</NavLink>
+            <NavLink to="/ContactPage" className="contact-btn secondary" title="Contact" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Contact Us</NavLink>
           </div>
         </div>
       </div>

@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from 'framer-motion';
 import Information from '../components/Information'
 import Faq from '../components/Faq'

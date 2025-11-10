@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom'
-import './Items.css';
-import ProductPage from '../pages/ProductPage';
+import React from 'react'
+import { useState } from 'react'
+import './Laptops.css'
 
-const Items = () => {
+
+const Laptops = () => {
+
   const [cart, setCart] = useState([]);
 
   const products = [
@@ -19,48 +20,84 @@ const Items = () => {
     {
       id: 2,
       name: "Asus ROG Zephyrus Gaming G16",
-      price: 3500000,
-      originalPrice: 3900000,
+      price: 4000000,
+      originalPrice: 4900000,
       image: "/src/assets/White crown best gaming laptop.jpg",
       rating: 5,
       category: "Laptops"
     },
     {
       id: 3,
-      name: "Microsoft Surface Pro 11th Edition",
-      price: 2400000,
-      originalPrice: 3500000,
-      image: "/src/assets/Microsoft Surface Book.jpg",
-      rating: 5,
-      category: "Tablets"
+      name: "Dell 7547 Inspiron",
+      price: 1000000,
+      originalPrice: 1700000,
+      image: "/src/assets/DELL 7547 Inspiron 15 Inch High-End Laptop User Guide.jpg",
+      rating: 3,
+      category: "Laptops"
     },
     {
       id: 4,
-      name: "Apple iPhone 16 Pro Max",
-      price: 780000,
-      originalPrice: 1440000,
-      image: "/src/assets/Apple debuts iPhone 16 Pro and iPhone 16 Pro Max.jpg",
+      name: "HP Elitebook",
+      price: 560000,
+      originalPrice: 830000,
+      image: "/src/assets/Dell Inspiron 14 – Intel Core i5 – 8GB RAM – 256GB SSD – Windows 11.jpg",
       rating: 3,
-      category: "Smartphones"
+      category: "Laptop"
     },
     {
       id: 5,
-      name: "Samsung S22 New Design",
-      price: 640000,
-      originalPrice: 950000,
-      image: "/src/assets/Samsung S22 New Design.jpg",
+      name: "Asus ROG Stix Scar 18",
+      price: 3640000,
+      originalPrice: 3950000,
+      image: "/src/assets/download (19).jpg",
       rating: 5,
-      category: "Smartphones"
+      category: "Laptop"
     },
     {
       id: 6,
-      name: "RazorBlade Gaming Headphone",
-      price: 245000,
-      originalPrice: 300000,
-      image: "/src/assets/Amazon_com_ Headphones & Earbuds_ Electronics_ Earbud Headphones, Over-Ear Headphones, On-Ear Headphones & More.jpg",
+      name: "RazorBlade Gaming Laptop",
+      price: 2450000,
+      originalPrice: 3000000,
+      image: "/src/assets/download (20).jpg",
+      rating: 5,
+      category: "Laptop"
+    },
+    {
+      id: 7,
+      name: "HP Omen 16 Slim",
+      price: 1340000,
+      originalPrice: 1500000,
+      image: "/src/assets/Incredible deal_ HP Omen 16 with Ryzen 7 6800H & RTX 3070 Ti discounted.jpg",
       rating: 4,
-      category: "Accessories"
-    }
+      category: "Laptop"
+    },
+    {
+      id: 8,
+      name: "Microsoft Surface Studio 2",
+      price: 3640000,
+      originalPrice: 3950000,
+      image: "/src/assets/Microsoft Surface Laptop_ Overview.jpg",
+      rating: 5,
+      category: "Laptop"
+    },
+    {
+      id: 9,
+      name: "Lenovo Ultrafino Ideapad",
+      price: 1550000,
+      originalPrice: 1950000,
+      image: "/src/assets/Lenovo Ultrafino Ideapad 81S90003BR vale a pena_.jpg",
+      rating: 4,
+      category: "Laptop"
+    },
+    {
+      id: 10,
+      name: "Asus ROG Zephyrus Gaming G16",
+      price: 4740000,
+      originalPrice: 4950000,
+      image: "/src/assets/White crown best gaming laptop.jpg",
+      rating: 5,
+      category: "Laptop"
+    },
   ];
 
   const addToCart = (product) => {
@@ -89,15 +126,14 @@ const Items = () => {
       ></i>
     ));
   };
-  
+
   return (
     <div className="ecommerce-products">
       <div className="products-header">
         <div className="header-content">
-          <h1>Featured Products</h1>
-          <p>Discover our latest collection of premium electronics</p>
+          <h1>Laptops</h1>
+          <p>Take a look at our newest collection of laptops and make the best choice for yourself</p>
         </div>
-        <NavLink to="/ProductPage" className="view-all-btn" title="Product" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>View All Products <i className="fa-solid fa-arrow-right"></i></NavLink>       
       </div>
 
       <div className="products-grid">
@@ -165,6 +201,6 @@ const Items = () => {
       </div> */}
     </div>
   );
-};
+}
 
-export default Items;
+export default Laptops

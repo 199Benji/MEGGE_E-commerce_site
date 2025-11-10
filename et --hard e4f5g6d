@@ -1,0 +1,30 @@
+[33mf73a023[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to HEAD~1
+[33m1cd0473[m HEAD@{1}: reset: moving to HEAD~1
+[33med57a7e[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{2}: commit (merge): new commit
+[33m1cd0473[m HEAD@{3}: commit: new commit
+[33mf73a023[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{4}: pull origin main: Fast-forward
+[33m1fbd97e[m HEAD@{5}: commit: new commit
+[33me52129a[m HEAD@{6}: pull origin main: Fast-forward
+[33mafdecdd[m HEAD@{7}: commit (merge): Esther is the shortest person i know
+[33m471f8eb[m HEAD@{8}: commit: Esther is the shortest person i know
+[33mfc8027f[m HEAD@{9}: pull origin main: Fast-forward
+[33m1574287[m HEAD@{10}: commit: Elijah o
+[33m6f543f3[m HEAD@{11}: commit: Elijah mbok
+[33m2e1dc9b[m HEAD@{12}: commit: Elijah mbok
+[33m6171aec[m HEAD@{13}: commit: Elijah mbok
+[33m26ac364[m HEAD@{14}: commit: Elijah's Commit
+[33mcd8264a[m HEAD@{15}: pull origin main: Fast-forward
+[33md10e23b[m HEAD@{16}: commit (merge): Collaborator 3 Commit
+[33mb3a6fc1[m HEAD@{17}: commit: Collaborator 3 Commit
+[33maa1fa1c[m HEAD@{18}: pull origin main: Fast-forward
+[33mdf30cd5[m HEAD@{19}: commit: Collaborator 1 Commit
+[33m8183d06[m HEAD@{20}: commit: Collaborator 1 Commit
+[33m7867741[m HEAD@{21}: pull origin main: Fast-forward
+[33m150d249[m HEAD@{22}: commit: collaborator 1 commit
+[33m59e4ed6[m HEAD@{23}: commit: Collaborator 1 commit
+[33m9fbdb1f[m HEAD@{24}: pull origin main: Fast-forward
+[33m43f5133[m HEAD@{25}: pull origin main: Fast-forward
+[33mb73286d[m HEAD@{26}: pull origin main: Fast-forward
+[33m97a8ed4[m HEAD@{27}: commit: collaborator 1 commit
+[33m6b1164a[m HEAD@{28}: commit: collaborator 1 commit
+[33ma8dcad1[m HEAD@{29}: clone: from https://github.com/199Benji/MEGGE_E-commerce_site

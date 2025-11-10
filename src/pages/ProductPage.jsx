@@ -1,8 +1,17 @@
 import React from 'react'
+import './ProductPage.css';
+import Laptops from '../components/Laptops'
+import Tablets from '../components/Tablets'
+import Iphones from '../components/Iphones'
+
 
 const ProductPage = () => {
   return (
-    <div>ProductPage</div>
+    <>
+      <Laptops />
+      <Tablets />
+      <Iphones />
+    </>
   )
 }
 

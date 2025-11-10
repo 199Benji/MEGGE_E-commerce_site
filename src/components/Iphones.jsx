@@ -1,66 +1,84 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom'
-import './Items.css';
-import ProductPage from '../pages/ProductPage';
+import React from 'react'
+import { useState } from 'react'
+import './Iphones.css';
 
-const Items = () => {
+const Iphones = () => {
+
   const [cart, setCart] = useState([]);
 
   const products = [
     {
       id: 1,
-      name: "Apple Macbook Air",
+      name: "iPhone 16 Pro Max",
       price: 1440000,
       originalPrice: 1940000,
-      image: "/src/assets/download (18).jpg",
-      rating: 4,
+      image: "/src/assets/download (29).jpg",
+      rating: 5,
       category: "Laptops"
     },
     {
       id: 2,
-      name: "Asus ROG Zephyrus Gaming G16",
-      price: 3500000,
-      originalPrice: 3900000,
-      image: "/src/assets/White crown best gaming laptop.jpg",
+      name: "iPhone 17 pro Max",
+      price: 4000000,
+      originalPrice: 4900000,
+      image: "/src/assets/Actualité _ iPhone 17 Pro & Pro Max _ 4 bonnes raisons d’attendre les futurs modèles premium d’Apple.jpg",
       rating: 5,
       category: "Laptops"
     },
     {
       id: 3,
-      name: "Microsoft Surface Pro 11th Edition",
-      price: 2400000,
-      originalPrice: 3500000,
-      image: "/src/assets/Microsoft Surface Book.jpg",
-      rating: 5,
-      category: "Tablets"
+      name: "iPhone 16 Teal Design",
+      price: 1000000,
+      originalPrice: 1700000,
+      image: "/src/assets/Apple iPhone 16 Plus 256GB - Teal _ Jacamo.jpg",
+      rating: 3,
+      category: "Laptops"
     },
     {
       id: 4,
-      name: "Apple iPhone 16 Pro Max",
-      price: 780000,
-      originalPrice: 1440000,
-      image: "/src/assets/Apple debuts iPhone 16 Pro and iPhone 16 Pro Max.jpg",
+      name: "iPhone 16 Blue Design",
+      price: 560000,
+      originalPrice: 830000,
+      image: "/src/assets/download (30).jpg",
       rating: 3,
-      category: "Smartphones"
+      category: "Laptop"
     },
     {
       id: 5,
-      name: "Samsung S22 New Design",
-      price: 640000,
-      originalPrice: 950000,
-      image: "/src/assets/Samsung S22 New Design.jpg",
+      name: "iPhone 15",
+      price: 950000,
+      originalPrice: 1400000,
+      image: "/src/assets/Apple Iphone 15 Plus Black Back And Side View HD PNG.jpg",
       rating: 5,
-      category: "Smartphones"
+      category: "Laptop"
     },
     {
       id: 6,
-      name: "RazorBlade Gaming Headphone",
-      price: 245000,
-      originalPrice: 300000,
-      image: "/src/assets/Amazon_com_ Headphones & Earbuds_ Electronics_ Earbud Headphones, Over-Ear Headphones, On-Ear Headphones & More.jpg",
+      name: "iPhone 11 Silver Design",
+      price: 380000,
+      originalPrice: 520000,
+      image: "/src/assets/айфон 11.jpg",
       rating: 4,
-      category: "Accessories"
-    }
+      category: "Laptop"
+    },
+    {
+      id: 7,
+      name: "iPhones XR ",
+      price: 260000,
+      originalPrice: 350000,
+      image: "/src/assets/MOCCA Strong Magnetic for iPhone XR Phone Case, [Compatible with Magsafe][Mil-Grade Drop Protection] Slim Thin Translucent Matte Protective Cover Case for iPhone XR Case 6_1'', Black.jpg",
+      rating: 3,
+      category: "Laptop"
+    },
+    {
+      id: 8,
+      name: "iPhone 7",
+      price: 170000,
+      originalPrice: 250000,
+      image: "/src/assets/Apple's new iPhone cases make me wish I had an iPhone 7.jpg",
+      rating: 2,
+      category: "Laptop"
+    },
   ];
 
   const addToCart = (product) => {
@@ -89,15 +107,14 @@ const Items = () => {
       ></i>
     ));
   };
-  
+
   return (
     <div className="ecommerce-products">
       <div className="products-header">
         <div className="header-content">
-          <h1>Featured Products</h1>
-          <p>Discover our latest collection of premium electronics</p>
+          <h1>iPhones</h1>
+          <p>Experience the pinnacle of iPhone innovation and design.</p>
         </div>
-        <NavLink to="/ProductPage" className="view-all-btn" title="Product" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>View All Products <i className="fa-solid fa-arrow-right"></i></NavLink>       
       </div>
 
       <div className="products-grid">
@@ -165,6 +182,6 @@ const Items = () => {
       </div> */}
     </div>
   );
-};
+}
 
-export default Items;
+export default Iphones
