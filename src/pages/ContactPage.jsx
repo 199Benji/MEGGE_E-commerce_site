@@ -18,7 +18,7 @@ import Request from "../components/Request.jsx"
 
       <div className="message"> 
           <h1>Send Messages</h1>
-          <p>You can also contact us on:</p>
+          <p>You can also contact us on</p>
       </div>
 
       <div className="site">
@@ -26,23 +26,27 @@ import Request from "../components/Request.jsx"
           <div className="icons">
             <i class="fa-solid fa-phone"></i>
             <div>
-              <p className="heading">Phone Number</p>
-              <p>+2348089855878</p>
+              <p className="heading">PHONE NUMBER</p>
+              <p>+2348121153217</p>
+              <p>You can reach us on normal calls</p>
+              <p>or message us on whatsapp</p>
             </div>
-          </div>
+          </div> 
 
           <div className="icons">
             <i class="fa-solid fa-square-envelope"></i>
             <div>
-              <p className="heading">Email Address</p>
+              <p className="heading">EMAIL ADDRESS</p>
               <p><a href="anthonyesther133@gmail.com">anthonyesther133@gmail.com</a></p>
+              <p>Conctact us with this email now</p>
             </div>
           </div>
 
           <div className="icons">
             <i className="fa-solid fa-location-dot"></i>
             <div>
-              <p className="heading">Location</p>
+              <p className="heading">LOCATION</p>
+              <p>You can also visit our loacation in</p>
               <p>Abak road, Uyo,Akwa-Ibom</p>
             </div>
           </div>
@@ -50,32 +54,17 @@ import Request from "../components/Request.jsx"
           <div className="icons">
             <i class="fa-brands fa-square-facebook"></i>
             <div>
-              <p className="heading">Facebook</p>
-              <p>Contact us on Facebook</p>
+              <p className="heading">FACEBOOK</p>
+              <p>We are also available on facebook</p>
+              <p>Contact us Immeediately</p>
             </div>
           </div>
 
-          <div className="icons">
-            <i class="fa-brands fa-whatsapp"></i>
-            <div>
-              <p className="heading">Whatsapp</p>
-              <p>Contact us on Whatsapp</p>
-            </div>
-          </div>
-
-          <div className="icons">
-            <i class="fa-brands fa-tiktok"></i>
-            <div>
-              <p className="heading">TikTok</p>
-              <p>Contact us on TikTok</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="media">
+        </div>        
+      </div>
+      <div className="media">
           <Request />
         </div>
-      </div>
     </div>
     
     <div className='Contactmap' style={{margin: '0 90px'}}>

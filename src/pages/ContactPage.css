@@ -7,20 +7,19 @@
       rgba(0, 0, 0, 0.4),   
       rgba(0, 0, 0, 0.6)    
     ),
-    url('../assets/images/backimage.jpeg');
+    url('../assets/images/meggeimage.jpg');
   background-size: cover ;
   background-position: center;
   justify-items: center;
-  padding-top: 120px;
-  height: 400px;
+  padding-top: 150px;
+  height: 450px;
 }
 p {
   font-family: "Poppins", sans-serif;
 }
 .contact-container h2 {
-  color: var(--primary_color);
-  font-size: xx-large;
-
+  color: white;
+  font-size: 50px;
 }
 
 .contact-container {
@@ -29,8 +28,6 @@ p {
   margin-bottom: 25px;
   --Header_font: "Inter Tight", sans-serif;
   --Paragraph_font: "Poppins", sans-serif;
-  
-
 }
 .button1 {
   color: white;
@@ -48,7 +45,6 @@ p {
   padding: 15px;
   border-radius: 5px;
   border: none;
-
 }
 .contacts {
   margin-top: 38px;
@@ -59,13 +55,11 @@ p {
   padding: 15px;
   border-radius: 8px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   gap: 10px;
   margin-right: 20px;
-  margin-bottom: 0px;
-  padding-bottom: 0;
-  
-
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 .icons i {
   color: blue;
@@ -76,19 +70,23 @@ p {
   margin: 20px;
 }
 .icons {
-  display: flex;
-  padding-left: 5px;
+  padding: 15px;
   color: black;
   box-sizing: border-box;
   background-color: rgba(247, 248, 247, 0.973);
-  box-shadow: 3px 3px 7px rgb(187, 185, 185);
-
+  border-right: 1px solid rgba(66, 143, 231, 0.842);
+  text-align: center;
+}
+ .icon p {
+  display: inline-block;
+  text-align: center;
 }
 .heading {
   font-weight: bold;
   padding-top: 20px;
   line-height: 20px;
-  padding-right: 150px;
+  text-align: center;
+  padding: 10px;
 }
 a {
   text-decoration: none;
@@ -96,7 +94,6 @@ a {
 }
 .media {
   color:black;
-
 }
 
 .site{
@@ -108,10 +105,20 @@ a {
   color: white;
 }
 .message {
-  color:black;
+  color:rgb(8, 8, 8);
   margin-top: 40px;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
+}
+.message:hover {
+  color: rgba(66, 143, 231, 0.842)
+}
+.image11 img {
+  width: 70%;
+  height: 80%;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  padding-right: 1px;
 }

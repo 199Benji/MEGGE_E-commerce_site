@@ -26,9 +26,13 @@ export default function Request() {
   return (
     <div className="request-container">
       <div className="gadget">
-        <h1>MEGGE Gadget Request Form</h1>
-        <p>Fill out the form below to request your desired MEGGE gadget.</p>
-      
+        <div className="gadgetlogo">
+          <div><img src="src/assets/Megge_logo.svg" alt="Megge logo" /></div>
+          <div className="fill">
+            <h1>MEGGE Gadget Request Form</h1>
+            <p>Fill out the form below to request your desired MEGGE gadget.</p>
+          </div>
+        </div>
 
       <div className="forms">
       <form className="request-form" onSubmit={handleSubmit}>
