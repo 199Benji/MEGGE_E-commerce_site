@@ -48,7 +48,7 @@ const Iphones = () => {
       name: "iPhone 15",
       price: 950000,
       originalPrice: 1400000,
-      image: "/src/assets/Apple Iphone 15 Plus Black Back And Side View HD PNG.jpg",
+      image: "/src/assets/download (31).jpg",
       rating: 5,
       category: "Laptop"
     },
@@ -66,16 +66,16 @@ const Iphones = () => {
       name: "iPhones XR ",
       price: 260000,
       originalPrice: 350000,
-      image: "/src/assets/MOCCA Strong Magnetic for iPhone XR Phone Case, [Compatible with Magsafe][Mil-Grade Drop Protection] Slim Thin Translucent Matte Protective Cover Case for iPhone XR Case 6_1'', Black.jpg",
+      image: "/src/assets/download (32).jpg",
       rating: 3,
       category: "Laptop"
     },
     {
       id: 8,
       name: "iPhone 7",
-      price: 170000,
-      originalPrice: 250000,
-      image: "/src/assets/Apple's new iPhone cases make me wish I had an iPhone 7.jpg",
+      price: 100000,
+      originalPrice: 170000,
+      image: "/src/assets/New iPhone 7 rosegold.jpg",
       rating: 2,
       category: "Laptop"
     },

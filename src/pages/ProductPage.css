@@ -1,0 +1,115 @@
+.page-intro {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, var(--primary_color) 0%, var(--secondary_color) 100%);
+    color: var(--white_color);
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out 0.2s forwards;
+}
+
+.intro-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: var(--Header_font);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out 0.4s forwards;
+}
+
+.highlight {
+    background: linear-gradient(45deg, var(--white_color), var(--white_dark));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+    position: relative;
+    display: inline-block;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--white_color), var(--white_dark));
+    animation: underlineExpand 0.8s ease-out 1.2s forwards;
+}
+
+.intro-subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    opacity: 0;
+    font-family: var(--Paragraph_font);
+    color: var(--white_dark);
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out 0.6s forwards;
+}
+
+/* Background pulse animation */
+.page-intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, var(--primary_color) 0%, var(--secondary_color) 100%);
+    z-index: -1;
+    animation: pulseBackground 6s ease-in-out infinite;
+}
+
+/* Keyframes */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes underlineExpand {
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes pulseBackground {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.95;
+        transform: scale(1.02);
+    }
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .page-intro {
+        padding: 3rem 1.5rem;
+    }
+    
+    .intro-heading {
+        font-size: 2.5rem;
+    }
+    
+    .intro-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    /* Reduce animation intensity on mobile */
+    .page-intro::before {
+        animation: none;
+    }
+}
