@@ -37,7 +37,7 @@ import Request from "../components/Request.jsx"
             <i class="fa-solid fa-square-envelope"></i>
             <div>
               <p className="heading">EMAIL ADDRESS</p>
-              <p><a href="anthonyesther133@gmail.com">anthonyesther133@gmail.com</a></p>
+              <p className="ant"><a href="anthonyesther133@gmail.com">anthonyesther133@gmail.com</a></p>
               <p>Conctact us with this email now</p>
             </div>
           </div>
@@ -69,8 +69,8 @@ import Request from "../components/Request.jsx"
     
     <div className='Contactmap' style={{margin: '0 90px'}}>
       <h1 style={{color: 'var(--primary_color)', fontFamily: 'var(--Paragraph_font)', textAlign: 'center'}}>Find Us on Google Maps</h1>
-      <p style={{color: 'var(--Black_Hover_color)', fontFamily: 'var(--Paragraph_font)', textAlign: 'center', padding: '10px 120px 40px'}}>Bringing convenience closer to you — visit us along Abak Road, Uyo, and experience seamless shopping with MEGGE.</p>
-      <div style={{ width: "100%", height: "350px" }}>
+      <p style={{color: 'var(--Black_Hover_color)', fontFamily: 'var(--Paragraph_font)', textAlign: 'center'}}>Bringing convenience closer to you — visit us along Abak Road, Uyo, and experience seamless shopping with MEGGE.</p>
+      <div style={{ width: "100%", height: "350px", marginTop: "25px" }}>
         <iframe
           title="Abak Road Map"
           src="https://www.google.com/maps?q=4.981412,7.793813&z=15&output=embed"

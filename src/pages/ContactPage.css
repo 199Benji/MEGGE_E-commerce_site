@@ -1,6 +1,7 @@
- * {
+* {
   font-family: "Inter Tight", sans-serif;
- }
+}
+
 .contact-container1 {
   background: 
     linear-gradient(
@@ -8,15 +9,17 @@
       rgba(0, 0, 0, 0.6)    
     ),
     url('../assets/images/meggeimage.jpg');
-  background-size: cover ;
+  background-size: cover;
   background-position: center;
   justify-items: center;
   padding-top: 150px;
   height: 450px;
 }
+
 p {
   font-family: "Poppins", sans-serif;
 }
+
 .contact-container h2 {
   color: white;
   font-size: 50px;
@@ -29,6 +32,7 @@ p {
   --Header_font: "Inter Tight", sans-serif;
   --Paragraph_font: "Poppins", sans-serif;
 }
+
 .button1 {
   color: white;
   background-color: blue;
@@ -39,48 +43,43 @@ p {
   display: flex;
   margin-top: 70px;
 }
-.button2{
+
+.button2 {
   color: white;
   background-color: rgba(7, 212, 34, 0.829);
   padding: 15px;
   border-radius: 5px;
   border: none;
 }
+
 .contacts {
-  margin-top: 38px;
-  color:rgba(0, 0, 0, 0.959);
-  box-sizing: border-box;
-  background-color: rgba(231, 233, 232, 0.425);
-  box-shadow: 3px 3px 7px rgb(231, 227, 227);
-  padding: 15px;
-  border-radius: 8px;
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+  gap: 20px;
 }
+
 .icons i {
   color: blue;
-  box-sizing: border-box;
   background-color: rgba(178, 211, 238, 0.678);
   border-radius: 50%;
   padding: 12px;
   margin: 20px;
 }
+
 .icons {
-  padding: 15px;
+  padding: 7px;
   color: black;
-  box-sizing: border-box;
   background-color: rgba(247, 248, 247, 0.973);
   border-right: 1px solid rgba(66, 143, 231, 0.842);
   text-align: center;
+  font-size: 16px;
 }
- .icon p {
+
+.icon p {
   display: inline-block;
   text-align: center;
 }
+
 .heading {
   font-weight: bold;
   padding-top: 20px;
@@ -88,33 +87,36 @@ p {
   text-align: center;
   padding: 10px;
 }
+
 a {
   text-decoration: none;
   color: black;
-}
-.media {
-  color:black;
+  font-size: 11px;
 }
 
-.site{
-  margin-top: 10px;
+.media {
+  color: black;
+}
+
+.site {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
-}
-.button2 {
-  color: white;
-}
+} 
+
 .message {
-  color:rgb(8, 8, 8);
+  color: rgb(8, 8, 8);
   margin-top: 40px;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
 }
+
 .message:hover {
-  color: rgba(66, 143, 231, 0.842)
+  color: rgba(66, 143, 231, 0.842);
 }
+
 .image11 img {
   width: 70%;
   height: 80%;
@@ -122,3 +124,142 @@ a {
   border-bottom-right-radius: 100px;
   padding-right: 1px;
 }
+
+@media (max-width: 480px) {
+
+  .contact-container1 {
+    height: 200px;
+    padding-top: 80px;
+    background-size: cover;
+
+  }
+
+  .contact-container1 h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .contact-container {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .button1,
+  .button2 {
+    padding: 7px;
+    font-size: 10px;
+    margin-top: 17px;
+    justify-content: center;
+  }
+
+  .contacts {
+    flex-direction: column;
+    padding: 13px;
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .icons {
+    box-sizing: border-box;
+    border-right: none;
+    padding: 6px;
+    margin: 15px;
+    font-size: 10px;
+  }
+
+  .icons i {
+    padding: 8px;
+    margin: 10px;
+    font-size: 13px;
+  }
+
+  .heading {
+    font-size: 14px;
+  }
+
+  .message {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  .Contactmap {
+    width: 360px;
+   
+  }
+  .Contactmap h1 {
+    font-size: 18px;
+  }
+  .Contactmap p {
+    font-size: 12px;
+    flex-direction: column;
+  }
+
+  .icons {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .contact-container1 {
+    height: 350px;
+    padding-top: 100px;
+  
+  }
+
+  .contact-container h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .contact-container p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .button1,
+  .button2 {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .contacts {
+    gap: 15px;
+    padding: 12px;
+    flex-direction: column;
+  }
+
+  .icons i {
+    padding: 10px;
+  }
+.icons {
+  font-size: 11px;
+}
+.ant {
+  font-size: 8px;
+} 
+.site {
+  margin: 10px;
+}
+}
+
+
+@media (max-width: 1024px) {
+
+  .contact-container1 {
+    height: 400px;
+    padding-top: 120px;
+  }
+
+  .contact-container h2 {
+    font-size: 42px;
+  }
+
+  .image11 img {
+    width: 75%;
+  }
+
+  .contacts {
+    gap: 8px;
+  }
+}
+
